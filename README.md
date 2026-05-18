@@ -1,5 +1,8 @@
 # Intelligent SQL Interpreter
 Natural Language Analytics using RAG, DuckDB, Streamlit, ChromaDB, and Local LLMs.
+
+<img width="2240" height="1260" alt="Screenshot 2026-05-18 at 4 40 09 AM" src="https://github.com/user-attachments/assets/c2eb01ee-c7d3-4cbb-a592-d1a82aabd2d5" />
+
 ## Overview
 Intelligent SQL Interpreter is a local-first AI analytics system that converts natural language business questions into executable SQL queries using Retrieval-Augmented Generation (RAG) over database schema metadata.
 Instead of sending entire database schemas into an LLM prompt, the system retrieves only the most relevant tables and columns using semantic search. This dramatically improves SQL quality, scalability, latency, and token efficiency.
