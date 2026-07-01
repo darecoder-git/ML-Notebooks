@@ -23,3 +23,21 @@ The system bridges the gap between raw data files and vectorized semantic search
 Diagram 2: Data Ingestion and Vectorization Pipeline
 
 <img width="3096" height="1570" alt="image" src="https://github.com/user-attachments/assets/d104171b-757f-42f2-8c68-10de0e06cc40" />
+
+**
+1. Code Entity Space
+2. Natural Language Space
+3. Input
+4. Calls
+5. Retrieves Schema
+6. Generates SQL
+7. Executes
+8. DataFrame
+9. Charts
+10. User Question (Text)
+11. app.py (Streamlit UI)
+12. rag_pipeline.py (Schema Retrieval)
+13. sql_generator.py (LLM Prompting)
+14. DuckDB (ecommerce.duckdb)
+15. visualization.py (Plotly)
+**
