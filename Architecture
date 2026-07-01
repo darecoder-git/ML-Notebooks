@@ -1,0 +1,50 @@
+The ML-Notebooks repository is a collection of machine learning projects and analytical tools. It is primarily centered around the Intelligent SQL Interpreter, a local-first RAG (Retrieval-Augmented Generation) system for natural language database querying. Additionally, the repository contains several standalone Jupyter notebooks covering diverse ML tasks such as text classification, audio analysis, and computer vision.
+
+### Core Project: Intelligent SQL Interpreter
+The flagship project in this repository is an AI-driven analytics engine. It enables users to query structured data using natural language by retrieving relevant database schema fragments and generating SQL for local execution.
+
+Key Philosophy: Local-first processing using Ollama for LLMs and embeddings, ensuring data privacy and reducing cloud costs 
+Primary Tech Stack: Streamlit (Frontend), DuckDB (SQL Engine), ChromaDB (Vector Store), and Ollama (LLM/Embeddings) 
+
+### Standalone ML Notebooks
+The other_notebooks/ directory contains experimental implementations for various machine learning domains:
+Clickbait Detection: NLP-based classification of news headlines.
+Song Genre Classification: Acoustic feature analysis using PCA and classic classifiers.
+Trash Image Classification: A Convolutional Neural Network (CNN) for waste management.
+System Architecture
+
+The following diagram illustrates how the Natural Language Space (User Questions) interacts with the Code Entity Space (Processing Scripts and Storage) within the SQL Interpreter project.
+
+Diagram 1: End-to-End Query Lifecycle
+
+Code Entity Space
+Natural Language Space
+Input
+Calls
+Retrieves Schema
+Generates SQL
+Executes
+DataFrame
+Charts
+User Question (Text)
+app.py (Streamlit UI)
+rag_pipeline.py (Schema Retrieval)
+sql_generator.py (LLM Prompting)
+DuckDB (ecommerce.duckdb)
+visualization.py (Plotly)
+Data and Metadata Flow
+The system bridges the gap between raw data files and vectorized semantic search. The following diagram shows how the initialization scripts transform the Olist dataset into queryable entities.
+
+Diagram 2: Data Ingestion and Vectorization Pipeline
+
+Code Entity Space
+Processing Logic
+Raw Data
+Read information_schema
+nomic-embed-text
+Kaggle CSVs (data/raw/)
+load_data.py
+build_embeddings.py
+ecommerce.duckdb
+chroma_db (Schema Metadata)
+
