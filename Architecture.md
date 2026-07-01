@@ -1,3 +1,4 @@
+
 The ML-Notebooks repository is a collection of machine learning projects and analytical tools. It is primarily centered around the Intelligent SQL Interpreter, a local-first RAG (Retrieval-Augmented Generation) system for natural language database querying. Additionally, the repository contains several standalone Jupyter notebooks covering diverse ML tasks such as text classification, audio analysis, and computer vision.
 
 ### Core Project: Intelligent SQL Interpreter
@@ -16,6 +17,7 @@ System Architecture
 The following diagram illustrates how the Natural Language Space (User Questions) interacts with the Code Entity Space (Processing Scripts and Storage) within the SQL Interpreter project.
 
 Diagram 1: End-to-End Query Lifecycle
+<img width="2302" height="1570" alt="Image 01-07-2026 at 10 48" src="https://github.com/user-attachments/assets/8441e442-8a4e-4654-be4e-551219e26d6a" />
 
 Code Entity Space
 Natural Language Space
