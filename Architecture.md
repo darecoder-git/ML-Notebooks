@@ -1,6 +1,3 @@
-
-The ML-Notebooks repository is a collection of machine learning projects and analytical tools. It is primarily centered around the Intelligent SQL Interpreter, a local-first RAG (Retrieval-Augmented Generation) system for natural language database querying. Additionally, the repository contains several standalone Jupyter notebooks covering diverse ML tasks such as text classification, audio analysis, and computer vision.
-
 ### Core Project: Intelligent SQL Interpreter
 The flagship project in this repository is an AI-driven analytics engine. It enables users to query structured data using natural language by retrieving relevant database schema fragments and generating SQL for local execution.
 
@@ -36,17 +33,3 @@ DuckDB (ecommerce.duckdb)
 visualization.py (Plotly)
 Data and Metadata Flow
 The system bridges the gap between raw data files and vectorized semantic search. The following diagram shows how the initialization scripts transform the Olist dataset into queryable entities.
-
-Diagram 2: Data Ingestion and Vectorization Pipeline
-
-Code Entity Space
-Processing Logic
-Raw Data
-Read information_schema
-nomic-embed-text
-Kaggle CSVs (data/raw/)
-load_data.py
-build_embeddings.py
-ecommerce.duckdb
-chroma_db (Schema Metadata)
-
