@@ -16,20 +16,20 @@ The following diagram illustrates how the Natural Language Space (User Questions
 Diagram 1: End-to-End Query Lifecycle
 <img width="2302" height="1570" alt="Image 01-07-2026 at 10 48" src="https://github.com/user-attachments/assets/8441e442-8a4e-4654-be4e-551219e26d6a" />
 
-Code Entity Space
-Natural Language Space
-Input
-Calls
-Retrieves Schema
-Generates SQL
-Executes
-DataFrame
-Charts
-User Question (Text)
-app.py (Streamlit UI)
-rag_pipeline.py (Schema Retrieval)
-sql_generator.py (LLM Prompting)
-DuckDB (ecommerce.duckdb)
-visualization.py (Plotly)
-Data and Metadata Flow
+1. Code Entity Space
+2. Natural Language Space
+3. Input
+4. Calls
+5. Retrieves Schema
+6. Generates SQL
+7. Executes
+8. DataFrame
+9. Charts
+10. User Question (Text)
+11. app.py (Streamlit UI)
+12. rag_pipeline.py (Schema Retrieval)
+13. sql_generator.py (LLM Prompting)
+14. DuckDB (ecommerce.duckdb)
+15. visualization.py (Plotly)
+16. Data and Metadata Flow
 The system bridges the gap between raw data files and vectorized semantic search. The following diagram shows how the initialization scripts transform the Olist dataset into queryable entities.
